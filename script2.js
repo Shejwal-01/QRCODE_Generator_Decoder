@@ -32,6 +32,7 @@ fileInp.addEventListener("change", async e => {
 copyBtn.addEventListener("click", () => {
     let text = document.querySelector("textarea").textContent;
     navigator.clipboard.writeText(text);
+    if(text) return alert("Copied to ClipBoard")
 });
 
 form.addEventListener("click", () => fileInp.click());
