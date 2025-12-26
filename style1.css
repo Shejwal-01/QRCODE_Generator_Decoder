@@ -46,8 +46,8 @@ nav{
 }
 .wrapper.active form{
   height: 225px;
-  pointer-events: none;
 }
+
 form img{
   display: none;
   max-width: 148px;
