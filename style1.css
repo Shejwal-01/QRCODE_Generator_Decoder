@@ -7,26 +7,32 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 0 10px;
-  background:orangered;
+padding: 0 10px;
+min-height: 100vh;
+align-items: center; 
+background: orangered;
 }
+
+nav{
+  display: grid;
+  align-items: center;
+}
+
 .wrapper{
-  height: 270px;
-  width: 420px;
-  border-radius: 7px;
+  display: grid;
+  place-content: center;
+  margin-top: 100px;
+  border-radius: 20px;
   background: rgb(61, 125, 244);
-  padding: 30px 30px 35px;
-  transition: height 0.2s ease;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 20px 25px 0;
+  transition: height 1s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 .wrapper.active{
-  height: 525px;
+  height: 530px;
 }
 .wrapper form{
+  margin-bottom: 20px;
   height: 210px;
   display: flex;
   cursor: pointer;
@@ -54,26 +60,30 @@ form img{
 }
 form .content i{
   color:orangered;
+  padding: 5px;
   font-size: 55px;
 }
 form .content p{
   color: orangered;
+  padding: 20px;
   margin-top: 15px;
   font-size: 16px;
 }
 .wrapper .details{
+  display: none;
   opacity: 0;
   margin-top: 25px;
   pointer-events: none;
 }
 .wrapper.active .details{
+  display: block;
   opacity: 1;
   pointer-events: auto;
   transition: opacity 0.5s 0.05s ease;
 }
 .details textarea{
-  width: 100%;
-  height: 128px;
+  width: auto;
+  height: auto;
   outline: none;
   resize: none;
   color: #fff;
@@ -119,36 +129,32 @@ textarea:hover::-webkit-scrollbar-thumb{
   transform: scale(0.95);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 430px) {
   .wrapper{
-    padding: 25px;
-    height: 260px;
+    padding: 16px 20px;
+    height: 255px;
   }
   .wrapper.active{
-    height: 520px;
+    height: 510px;
   }
 }
 
 
 .bottom{
-  margin-top: 400px;
-  margin-left: 20px;
- 
-
+  display: grid;
+ justify-content: right;
+ margin-block: auto;
+ margin-top: 20px;
 }
 
 .bottom button{
-
  cursor: pointer;
  width: 4cm;
  height: 1cm;
  border-radius: 0.5cm;
  background-color: yellow;
- color: black;
- text-emphasis:initial;
-
-
 }
+
 nav {  
   background-color:black; 
   position: fixed;  
@@ -160,7 +166,6 @@ nav {
   align-items: center;  
   box-shadow: 0 0 25px 0 black; 
   border-radius: 1cm;
-
   }  
     
  

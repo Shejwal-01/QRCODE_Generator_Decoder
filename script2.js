@@ -23,7 +23,7 @@ function fetchRequest(file, formData) {
 
 fileInp.addEventListener("change", async e => {
     let file = e.target.files[0];
-    if(!file) return;
+    if(!file) return wrapper.classlist.remove("active");
     let formData = new FormData();
     formData.append('file', file);
     fetchRequest(file, formData);

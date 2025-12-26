@@ -6,7 +6,7 @@ let preValue;
 
 generateBtn.addEventListener("click", () => {
     let qrValue = qrInput.value.trim();
-    if(!qrValue || preValue === qrValue) return;
+    if(!qrValue || preValue === qrValue) return alert("Enter text or URL");
     preValue = qrValue;
     generateBtn.innerText = "Generating QR Code...";
     qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
@@ -16,9 +16,10 @@ generateBtn.addEventListener("click", () => {
     });
 });
 
-qrInput.addEventListener("keyup", () => {
-    if(!qrInput.value.trim()) {
-        wrapper.classList.remove("active");
-        preValue = "";
-    }
+qrInput.addEventListener("input", () => {
+  if (!qrInput.value.trim()) {
+    wrapper.classList.remove("active");
+    preValue = "";
+    qrImg.src = "";
+  }
 });
