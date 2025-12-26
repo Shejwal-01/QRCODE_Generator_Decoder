@@ -1,4 +1,4 @@
-QR Code Generator & Scanner
+QR Code Generator & Decoder
 
 A lightweight browser-based web project that lets users both generate and read QR codes through intuitive web interfaces. Built with HTML, CSS, and JavaScript, this project offers a simple and accessible solution for on-the-fly QR code creation and scanning.
 
@@ -8,7 +8,7 @@ This repository provides two core functionalities:
 
 QR Code Generator — Create and customize QR codes directly in your browser.
 
-QR Code Scanner — Scan and decode QR codes in real-time using your device's camera.
+QR Code Decoder — Decode QR codes by uploading them from your files.
 
 It's a handy tool if you want a quick and easy way to manage QR codes locally without installing additional software.
 
@@ -28,7 +28,7 @@ To use this project:
 
 Open the index.html page to access the QR Code Generator.
 
-Open reader.html to access the QR Code Scanner (ensure your browser has permission to use the camera).
+Open reader.html to access the QR Code Decoder.
 
 No installation is necessary—just download or clone the repository and open the files in your web browser.
 
@@ -36,7 +36,7 @@ Project Structure
 
 index.html – The front-end interface for generating QR codes.
 
-reader.html – The front-end interface for scanning QR codes using your camera.
+reader.html – The front-end interface for decoding QR codes using HTML5 JS library.
 
 script.js / script2.js – Core logic for generating and decoding QR codes.
 
@@ -46,7 +46,7 @@ Usage
 
 Generating QR Codes: Open index.html, input your data (e.g., text or URL), and the app generates a QR code for you.
 
-Scanning QR Codes: Open reader.html, grant camera access, and point your camera at a QR code to automatically decode it live in the browser.
+Scanning QR Codes: Upload qr img, png, jpeg to decode it.
 
 Contributing
 
@@ -64,4 +64,4 @@ No license is defined in the repository at this time. If you plan to share or al
 
 Contact
 
-Questions or suggestions? Feel free to reach out via the repository owner’s GitHub profile.
+Questions or suggestions? Feel free to reach out via the repository GitHub profile.
